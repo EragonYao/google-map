@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project default="copy_files">
+      <target name="copy_files">
+      	<copy file="twitter-data.mv.db" todir="${user.home}/gpms_senary_files/database"/>
+      	<copy todir="${user.home}/gpms_senary_files/resources" >  
+      	    <fileset dir="src/main/resources" includes="**"/>  
+      	</copy> 
+      </target>
+</project>   
